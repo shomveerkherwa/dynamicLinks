@@ -1,5 +1,5 @@
 
-const { response } = require('express');
+const response = require('express');
 const express = require('express');
 const influencerRouter = express.Router();
 const dynamicLinkService = require('../services/dynamicLinkService');
