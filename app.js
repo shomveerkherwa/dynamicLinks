@@ -1,5 +1,5 @@
 const express = require('express');
-const chalk = require('chalk');
+
 const morgan = require('morgan');
 const path = require('path');
 const influencerRouter = require('./src/routers/influencerRouter');
