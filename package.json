@@ -17,10 +17,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
-  "nodemonConfig": {
-    "restartable": "rs",
-    "delay": 2500,
-    "env": {
+  "env": {
       "PORT": 4000
     }
   }
