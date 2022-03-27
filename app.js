@@ -27,5 +27,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(3000, ()=>{
-    console.log(`listening always on port ${chalk.green(PORT)}`);
+    console.log(`listening always on port ${PORT}`);
 })
