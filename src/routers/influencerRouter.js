@@ -59,13 +59,13 @@ const buildShareContent = function(data) {
     return ('<!DOCTYPE html>' +
     '<html>' +
       '<head>' +
-        '<meta property="fb:app_id" content="your_facebook_app_id" />' +
-        '<meta property="al:android:package" content="your_app_package" />' +
-        '<meta property="al:android:app_name" content="your_app_name" />' +
+        '<meta property="fb:app_id" content="316292795744893" />' +
+        '<meta property="al:android:package" content="com.wifiesta.android.dev" />' +
+        '<meta property="al:android:app_name" content="wifiesta" />' +
         '<meta property="al:android:url" content="'+ data.deeplink +'" />' +
         '<meta property="al:ios:url" content="'+ data.deeplink +'" />' +
-        '<meta property="al:ios:app_store_id" content="your_app_store_id" />' +
-        '<meta property="al:ios:app_name" content="your_app_name" />' +
+        '<meta property="al:ios:app_store_id" content="1273428488 " />' +
+        '<meta property="al:ios:app_name" content="wifiesta" />' +
         '<meta property="al:web:should_fallback" content="true" />' +
         '<meta property="al:web:url" content="some_url_to_view_when_fallback_is_needed" />' + // dont know if this is required
   
