@@ -21,7 +21,10 @@ influencerRouter.route('/').get((req,res) =>{
     const data = JSON.stringify({
         "type"   : type,
         "typeId" :typeId,
-        "userId": uId
+        "userId" : uId,
+        "bpId" :bpId,
+        "branchId" : branchId,
+        "placeId" : placeId
       });
       
       const url = req.originalUrl;
