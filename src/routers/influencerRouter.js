@@ -17,6 +17,7 @@ influencerRouter.route('/').get((req,res) =>{
     let branchId = req.query.branchId;
     let bpId = req.query.bpId;
     let refId = req.query.refId;
+    let redirect = req.query.redirect;
     
     const data = JSON.stringify({
         "type"   : type,
@@ -24,18 +25,22 @@ influencerRouter.route('/').get((req,res) =>{
         "userId" : uId,
         "bpId" :bpId,
         "branchId" : branchId,
-        "placeId" : placeId
+        "placeId" : placeId,
+        "redirect": redirect ? false : true
       });
+      console.log("data "+data);
       
       const url = req.originalUrl;
-      if(url.includes('?')){
+      if(url.includes('?') && !redirect){
         buildRedirectContent(req, res, data);
       }else{
         res.render('influencer');
       }
 })
 
+
 const buildRedirectContent = function(req, res, data) {
+    
     const shortLink = dynamicLinkService.getDynamicLinkAsync(data);
     //res.render('influencer');
     shortLink.then(function(link) {

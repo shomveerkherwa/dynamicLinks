@@ -2,6 +2,7 @@ const axios = require('axios');
 
 function dynamicLinkService(){
     function getDynamicLinkWithPromise(data){
+        console.log("data "+data);
         let config = {
             headers: {
                 'Content-Type': 'application/json'
@@ -21,6 +22,7 @@ function dynamicLinkService(){
 
     var getDynamicLinkAsync = async function (data){
         console.log("I am way to cool");
+        console.log("data "+data);
         let config = {
             headers: {
                 'Content-Type': 'application/json'
